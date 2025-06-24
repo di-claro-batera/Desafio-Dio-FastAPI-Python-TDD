@@ -1,5 +1,9 @@
 run:
 	@uvicorn store.main:app --reload
 
-precommit-install:
+pre-commit-install:
 	@poetry run pre-commit install
+
+
+test:
+	@poetry run pytest
