@@ -1,9 +1,27 @@
-from datetime import datetime, timezone
-import uuid
-from pydantic import UUID4, BaseModel, Field
+from datetime import datetime
+from decimal import Decimal
+from bson import Decimal128
+from pydantic import UUID4, BaseModel, Field, model_validator
 
 
 class BaseSchemaMixin(BaseModel):
-    id: UUID4 = Field(default_factory=uuid.uuid4)
-    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
-    updated_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    class Config:
+        from_attributes = True
+
+
+class OutMixin(BaseModel):
+    id: UUID4 = Field()
+    created_at: datetime = Field()
+    updated_at: datetime = Field()
+
+    @model_validator(mode="before")
+    @classmethod
+    def set_schema(cls, data):
+        if not isinstance(data, dict):
+            return data  # ← evita AttributeError se não for dict
+
+        for key, value in data.items():
+            if isinstance(value, Decimal128):
+                data[key] = Decimal(str(value))
+
+        return data
