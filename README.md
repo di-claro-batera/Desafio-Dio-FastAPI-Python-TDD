@@ -1,6 +1,8 @@
 ## 🚀 Desafio DIO – FastAPI, Python e TDD
 
-Projeto desenvolvido como parte do desafio final do Bootcamp da Digital Innovation One (DIO), utilizando **FastAPI**, **Python 3.13**, **MongoDB** e **Test-Driven Development (TDD)**.
+- Este projeto foi desenvolvido como parte do desafio final do Bootcamp da Digital Innovation One (DIO), com o objetivo de aplicar na prática os conceitos de **APIs RESTful**, **Clean Architecture**, **MongoDB assíncrono**, **FastAPI**, **TDD com pytest**, além de ferramentas modernas como `pre-commit`, `poetry` e linters automáticos.  
+  
+- A aplicação consiste em um sistema de gerenciamento de produtos com CRUD completo e filtro por faixa de preço, oferecendo uma base sólida e escalável para projetos reais.
 
 
 ## ✨ Funcionalidades
