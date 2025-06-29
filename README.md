@@ -1,9 +1,9 @@
-🚀 Desafio DIO – FastAPI, Python e TDD
+## 🚀 Desafio DIO – FastAPI, Python e TDD
 
 Projeto desenvolvido como parte do desafio final do Bootcamp da Digital Innovation One (DIO), utilizando **FastAPI**, **Python 3.13**, **MongoDB** e **Test-Driven Development (TDD)**.
 
 
-✨ Funcionalidades
+## ✨ Funcionalidades
 
 - CRUD de produtos completo com validação
 - Filtro de produtos por faixa de preço (`GET /products/filter`)
@@ -52,7 +52,7 @@ make run
 http://localhost:8000/docs
 
 
-✅ Testes
+## ✅ Testes
 
 Execute todos os testes com:
 
@@ -62,7 +62,7 @@ Ou apenas testes que contenham parte do nome:
 
 make test-matching K=filter
 
-🧹 Pre-commit
+## 🧹 Pre-commit
 
 Instale e rode os hooks:make pre-commit-install
 
@@ -73,21 +73,31 @@ Para manter tudo atualizado:
 
 pre-commit autoupdate
 
-📂 Estrutura de pastas
+## 📂 Estrutura de pastas
 
 store/
+
 ├── main.py
+
 ├── models/
+
 ├── schemas/
+
 ├── controllers/
+
 ├── usecases/
+
 └── db/
+
 tests/
+
 Makefile
+
 pyproject.toml
 
 
-👨‍💻 Autor
+
+## 👨‍💻 Autor
 
 Desenvolvido por Diego Claro
 
