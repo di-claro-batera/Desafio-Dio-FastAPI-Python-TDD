@@ -1,0 +1,1 @@
+Arquivo temporário para usar como referência para faze3r o upload da imagem
