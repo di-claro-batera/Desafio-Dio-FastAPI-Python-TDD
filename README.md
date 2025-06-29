@@ -5,6 +5,13 @@
 - A aplicação consiste em um sistema de gerenciamento de produtos com CRUD completo e filtro por faixa de preço, oferecendo uma base sólida e escalável para projetos reais.
 
 
+## 🚀 API em execução
+
+Abaixo, uma prévia da documentação interativa gerada automaticamente pelo FastAPI:
+
+![Swagger UI](API.png)
+
+
 ## ✨ Funcionalidades
 
 - CRUD de produtos completo com validação
